@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D6A60922-CE91-42FC-B5A1-5893C91E1FF2</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Scope</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A67A3B1F7B0E7E7622FFF92AD5C08D6400E854EA</key>
 		<string>https://github.com/jamesestmoi/Scope.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Scope.xcodeproj</string>
+	<string>Scope.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A67A3B1F7B0E7E7622FFF92AD5C08D6400E854EA</key>

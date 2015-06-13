@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00AD89041B2C981400B3C6C3 /* ScopeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD89031B2C981400B3C6C3 /* ScopeController.swift */; };
+		00AD89061B2C983600B3C6C3 /* ScopeBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD89051B2C983600B3C6C3 /* ScopeBarView.swift */; };
 		00C4856C1B2C8C0000EE8CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4856B1B2C8C0000EE8CED /* AppDelegate.swift */; };
 		00C4856E1B2C8C0000EE8CED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4856D1B2C8C0000EE8CED /* ViewController.swift */; };
 		00C485711B2C8C0000EE8CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4856F1B2C8C0000EE8CED /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00AD89031B2C981400B3C6C3 /* ScopeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeController.swift; sourceTree = "<group>"; };
+		00AD89051B2C983600B3C6C3 /* ScopeBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeBarView.swift; sourceTree = "<group>"; };
 		00C485661B2C8C0000EE8CED /* Scope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C4856A1B2C8C0000EE8CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C4856B1B2C8C0000EE8CED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			children = (
 				00C4856B1B2C8C0000EE8CED /* AppDelegate.swift */,
 				00C4856D1B2C8C0000EE8CED /* ViewController.swift */,
+				00AD89031B2C981400B3C6C3 /* ScopeController.swift */,
+				00AD89051B2C983600B3C6C3 /* ScopeBarView.swift */,
 				00C4856F1B2C8C0000EE8CED /* Main.storyboard */,
 				00C485721B2C8C0000EE8CED /* Images.xcassets */,
 				00C485741B2C8C0000EE8CED /* LaunchScreen.xib */,
@@ -213,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C4856E1B2C8C0000EE8CED /* ViewController.swift in Sources */,
+				00AD89041B2C981400B3C6C3 /* ScopeController.swift in Sources */,
 				00C4856C1B2C8C0000EE8CED /* AppDelegate.swift in Sources */,
+				00AD89061B2C983600B3C6C3 /* ScopeBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				00C485871B2C8C0000EE8CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00C485881B2C8C0000EE8CED /* Build configuration list for PBXNativeTarget "ScopeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				00C4858A1B2C8C0000EE8CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
