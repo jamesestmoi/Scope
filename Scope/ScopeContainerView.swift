@@ -13,12 +13,16 @@ class ScopeContainerView: UIView, UIPageViewControllerDataSource {
 
     var pageViewController: UIPageViewController!
     var scopeController: ScopeController!
-    var numberOfScopes: Int = 0
+    var numberOfScopes: Int {
+        get {
+            return scopeController.scopes().count
+        }
+    }
     
-    init(numberOfScopes: Int, scopeController: ScopeController) {
+    init(scopeController: ScopeController) {
         
-        self.numberOfScopes = numberOfScopes
         self.scopeController = scopeController
+        
         self.pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
         
         super.init(frame: CGRectZero)
@@ -72,7 +76,7 @@ class ScopeContainerView: UIView, UIPageViewControllerDataSource {
             let scopeTableViewController = ScopeTableViewController()
             
             scopeTableViewController.index = index
-            scopeTableViewController.data = scopeController.filteredDataForScope(scopeController.scopes()[index])
+            scopeTableViewController.scopeController = scopeController
             
             return scopeTableViewController
         }

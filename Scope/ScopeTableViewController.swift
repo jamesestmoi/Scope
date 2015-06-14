@@ -11,10 +11,12 @@ import UIKit
 class ScopeTableViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
     
     var index: Int = 0
-    var data = [AnyObject]()
+    var scopeController: ScopeController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scopeController.customizeTableView(&self.tableView)
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -32,21 +34,17 @@ class ScopeTableViewController: UITableViewController, UITableViewDataSource, UI
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        
+        let scope = scopeController.scopes()[index]
+        
+        return scopeController.tableView(tableView, numberOfRowsInSection: section, andScope: scope)
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? UITableViewCell
         
-        //if cell == nil {
-            let cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
-        //}
+        let scope = scopeController.scopes()[index]
         
-        let name = data[indexPath.row] as! String
-        
-        cell.textLabel!.text = name
-
-        return cell
+        return scopeController.tableView(tableView, cellForRowAtIndexPath: indexPath, andScope: scope)
     }
 
     /*

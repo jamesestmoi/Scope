@@ -9,15 +9,11 @@
 import UIKit
 
 class ViewController: ScopeController {
+    
+    let data = ["Kanye West", "Jay Z", "2 Chainz"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func scopes() -> [Scope] {
@@ -28,20 +24,31 @@ class ViewController: ScopeController {
         return [allScope, kanyeScope]
     }
     
-    override func data() -> [AnyObject] {
-        
-        return ["Kanye West", "Jay Z", "2 Chainz"]
-    }
-
-    override func filteredDataForScope(scope: Scope) -> [AnyObject] {
+    override func dataForScope(scope: Scope) -> [AnyObject] {
         
         if scope.query as! String == "" {
-            return data()
+            return data
         }
         
-        return data().filter { (d) -> Bool in
-            return d as! String == scope.query as! String
+        return data.filter { (d) -> Bool in
+            return d as String == scope.query as! String
         }
+    }
+    
+    override func customizeTableView(inout tableView: UITableView!) {
+        
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, andScope scope: Scope) -> UITableViewCell {
+        
+        let d = dataForScope(scope)
+        
+        let cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
+        let name = d[indexPath.row] as! String
+        
+        cell.textLabel!.text = name
+        
+        return cell
     }
 }
 

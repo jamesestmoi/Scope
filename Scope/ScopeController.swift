@@ -11,24 +11,21 @@ import Cartography
 
 protocol ScopeControllerDelegate {
     func scopes() -> [Scope]
-    func data() -> [AnyObject]
-    func filteredDataForScope(scope: Scope) -> [AnyObject]
+    func dataForScope(scope: Scope) -> [AnyObject]
+    func customizeTableView(inout tableView: UITableView!)
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, andScope scope: Scope) -> UITableViewCell
 }
 
 class ScopeController: UIViewController, ScopeControllerDelegate {
     
     var barView: ScopeBarView!
     var containerView: ScopeContainerView!
-    
-    var currentScopeData = [AnyObject]()
-    
-    var currentScope: Scope!
+    var tableView: UITableView!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
 
         barView = ScopeBarView(scopes: scopes())
-        containerView = ScopeContainerView(numberOfScopes: scopes().count, scopeController: self)
+        containerView = ScopeContainerView(scopeController: self)
         
         view.addSubview(barView)
         view.addSubview(containerView)
@@ -45,17 +42,28 @@ class ScopeController: UIViewController, ScopeControllerDelegate {
             container.right == view.right
             container.bottom == view.bottom
         }
+        
+        super.viewDidLoad()
     }
 
     func scopes() -> [Scope] {
         return [Scope]()
     }
     
-    func data() -> [AnyObject] {
+    func dataForScope(scope: Scope) -> [AnyObject] {
         return [AnyObject]()
     }
     
-    func filteredDataForScope(scope: Scope) -> [AnyObject] {
-        return [AnyObject]()
+    func customizeTableView(inout tableView: UITableView!) {
+        tableView.backgroundColor = UIColor.grayColor()
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int, andScope scope: Scope) -> Int {
+        return dataForScope(scope).count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, andScope scope: Scope) -> UITableViewCell {
+        
+        return UITableViewCell()
     }
 }
