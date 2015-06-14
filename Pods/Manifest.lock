@@ -1,0 +1,13 @@
+PODS:
+  - Cartography (0.5.0)
+  - SnapKit (0.12.0)
+
+DEPENDENCIES:
+  - Cartography
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Cartography: 774e5cc446f5a6bca5d4345c5aa6af9a1fe74dc6
+  SnapKit: 00c388aa3bf1944c1b55472f31e841f75bd83882
+
+COCOAPODS: 0.36.0

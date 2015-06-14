@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A511221B2C9EBA00EBF9F4 /* ScopeBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A511211B2C9EBA00EBF9F4 /* ScopeBarItemView.swift */; };
+		00A511241B2CA6AC00EBF9F4 /* ScopeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A511231B2CA6AC00EBF9F4 /* ScopeContainerView.swift */; };
+		00A511261B2CC3AC00EBF9F4 /* ScopeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A511251B2CC3AC00EBF9F4 /* ScopeTableViewController.swift */; };
+		00A511281B2D219500EBF9F4 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A511271B2D219500EBF9F4 /* Scope.swift */; };
 		00AD89041B2C981400B3C6C3 /* ScopeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD89031B2C981400B3C6C3 /* ScopeController.swift */; };
 		00AD89061B2C983600B3C6C3 /* ScopeBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD89051B2C983600B3C6C3 /* ScopeBarView.swift */; };
 		00C4856C1B2C8C0000EE8CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4856B1B2C8C0000EE8CED /* AppDelegate.swift */; };
@@ -15,6 +19,7 @@
 		00C485731B2C8C0000EE8CED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C485721B2C8C0000EE8CED /* Images.xcassets */; };
 		00C485761B2C8C0000EE8CED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C485741B2C8C0000EE8CED /* LaunchScreen.xib */; };
 		00C485821B2C8C0000EE8CED /* ScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C485811B2C8C0000EE8CED /* ScopeTests.swift */; };
+		33F1602DADB12E796C87319B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B31FD07123C570CC0D64CC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A511211B2C9EBA00EBF9F4 /* ScopeBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeBarItemView.swift; sourceTree = "<group>"; };
+		00A511231B2CA6AC00EBF9F4 /* ScopeContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeContainerView.swift; sourceTree = "<group>"; };
+		00A511251B2CC3AC00EBF9F4 /* ScopeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeTableViewController.swift; sourceTree = "<group>"; };
+		00A511271B2D219500EBF9F4 /* Scope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
 		00AD89031B2C981400B3C6C3 /* ScopeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeController.swift; sourceTree = "<group>"; };
 		00AD89051B2C983600B3C6C3 /* ScopeBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeBarView.swift; sourceTree = "<group>"; };
 		00C485661B2C8C0000EE8CED /* Scope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scope.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +49,9 @@
 		00C4857B1B2C8C0000EE8CED /* ScopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C485801B2C8C0000EE8CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C485811B2C8C0000EE8CED /* ScopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeTests.swift; sourceTree = "<group>"; };
+		7F9DFB29EB0ED4FA9F83F576 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D65391F749140913D43E69ED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E2B31FD07123C570CC0D64CC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F1602DADB12E796C87319B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +79,8 @@
 				00C485681B2C8C0000EE8CED /* Scope */,
 				00C4857E1B2C8C0000EE8CED /* ScopeTests */,
 				00C485671B2C8C0000EE8CED /* Products */,
+				7BF00A279FEBE400CD5B6135 /* Pods */,
+				048DBAD040F3BDF30C26D8D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +100,10 @@
 				00C4856D1B2C8C0000EE8CED /* ViewController.swift */,
 				00AD89031B2C981400B3C6C3 /* ScopeController.swift */,
 				00AD89051B2C983600B3C6C3 /* ScopeBarView.swift */,
+				00A511211B2C9EBA00EBF9F4 /* ScopeBarItemView.swift */,
+				00A511231B2CA6AC00EBF9F4 /* ScopeContainerView.swift */,
+				00A511251B2CC3AC00EBF9F4 /* ScopeTableViewController.swift */,
+				00A511271B2D219500EBF9F4 /* Scope.swift */,
 				00C4856F1B2C8C0000EE8CED /* Main.storyboard */,
 				00C485721B2C8C0000EE8CED /* Images.xcassets */,
 				00C485741B2C8C0000EE8CED /* LaunchScreen.xib */,
@@ -118,6 +137,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		048DBAD040F3BDF30C26D8D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2B31FD07123C570CC0D64CC /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BF00A279FEBE400CD5B6135 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F9DFB29EB0ED4FA9F83F576 /* Pods.debug.xcconfig */,
+				D65391F749140913D43E69ED /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00C485851B2C8C0000EE8CED /* Build configuration list for PBXNativeTarget "Scope" */;
 			buildPhases = (
+				6DC9004C254609B462E3F7DF /* Check Pods Manifest.lock */,
 				00C485621B2C8C0000EE8CED /* Sources */,
 				00C485631B2C8C0000EE8CED /* Frameworks */,
 				00C485641B2C8C0000EE8CED /* Resources */,
+				F41B38C3AD33B26736F69D0D /* Embed Pods Frameworks */,
+				9D5D8D532789B42782B12179 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,14 +252,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DC9004C254609B462E3F7DF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D5D8D532789B42782B12179 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F41B38C3AD33B26736F69D0D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00C485621B2C8C0000EE8CED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A511281B2D219500EBF9F4 /* Scope.swift in Sources */,
 				00C4856E1B2C8C0000EE8CED /* ViewController.swift in Sources */,
+				00A511241B2CA6AC00EBF9F4 /* ScopeContainerView.swift in Sources */,
+				00A511221B2C9EBA00EBF9F4 /* ScopeBarItemView.swift in Sources */,
 				00AD89041B2C981400B3C6C3 /* ScopeController.swift in Sources */,
 				00C4856C1B2C8C0000EE8CED /* AppDelegate.swift in Sources */,
+				00A511261B2CC3AC00EBF9F4 /* ScopeTableViewController.swift in Sources */,
 				00AD89061B2C983600B3C6C3 /* ScopeBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +439,7 @@
 		};
 		00C485861B2C8C0000EE8CED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F9DFB29EB0ED4FA9F83F576 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Scope/Info.plist;
@@ -358,6 +450,7 @@
 		};
 		00C485871B2C8C0000EE8CED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65391F749140913D43E69ED /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Scope/Info.plist;

@@ -1,25 +1,30 @@
 //
-//  ScopeBarView.swift
-//  
+//  ScopeBarItemView.swift
+//  Scope
 //
 //  Created by James Pickering on 6/13/15.
-//
+//  Copyright (c) 2015 James Pickering. All rights reserved.
 //
 
 import UIKit
 
-class ScopeBarView: UIView {
+class ScopeBarItemView: UIView {
     
-    var views = [ScopeBarItemView]()
+    var title: String!
+    var backgroundImage: UIImage!
     
-    init(scopes: [Scope]) {
+    init(title: String, imageNamed: String) {
+        
+        self.title = title
+        self.backgroundImage = UIImage(named: imageNamed)
+        
         super.init(frame: CGRectZero)
     }
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

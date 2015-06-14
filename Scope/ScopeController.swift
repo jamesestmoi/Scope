@@ -7,31 +7,55 @@
 //
 
 import UIKit
+import Cartography
 
-class ScopeController: UIViewController {
+protocol ScopeControllerDelegate {
+    func scopes() -> [Scope]
+    func data() -> [AnyObject]
+    func filteredDataForScope(scope: Scope) -> [AnyObject]
+}
+
+class ScopeController: UIViewController, ScopeControllerDelegate {
     
     var barView: ScopeBarView!
+    var containerView: ScopeContainerView!
+    
+    var currentScopeData = [AnyObject]()
+    
+    var currentScope: Scope!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        barView = ScopeBarView(scopes: scopes())
+        containerView = ScopeContainerView(numberOfScopes: scopes().count, scopeController: self)
+        
+        view.addSubview(barView)
+        view.addSubview(containerView)
+        
+        layout(barView, containerView, view) { (bar, container, view) -> () in
+            
+            bar.top == view.top
+            bar.left == view.left
+            bar.right == view.right
+            bar.height == 88
+            
+            container.top == bar.bottom
+            container.left == view.left
+            container.right == view.right
+            container.bottom == view.bottom
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func scopes() -> [Scope] {
+        return [Scope]()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func data() -> [AnyObject] {
+        return [AnyObject]()
     }
-    */
-
+    
+    func filteredDataForScope(scope: Scope) -> [AnyObject] {
+        return [AnyObject]()
+    }
 }
