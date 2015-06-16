@@ -20,8 +20,9 @@ class ViewController: ScopeController {
         
         let allScope = Scope(title: "ALL", imageNamed: "nil", query: "")
         let kanyeScope = Scope(title: "KANYE", imageNamed: "nil", query: "Kanye West")
+        let jScope = Scope(title: "J", imageNamed: "nil", query: "Jay Z")
         
-        return [allScope, kanyeScope]
+        return [allScope, kanyeScope, jScope, jScope, jScope]
     }
     
     override func dataForScope(scope: Scope) -> [AnyObject] {
@@ -37,6 +38,7 @@ class ViewController: ScopeController {
     
     override func customizeTableView(inout tableView: UITableView!) {
         
+        tableView.backgroundColor = UIColor.grayColor()
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, andScope scope: Scope) -> UITableViewCell {

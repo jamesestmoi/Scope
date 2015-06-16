@@ -8,17 +8,27 @@
 
 import UIKit
 
-class ScopeBarItemView: UIView {
+class ScopeBarItemView: UIButton {
     
     var title: String!
     var backgroundImage: UIImage!
+    var barView: ScopeBarView!
+    var index: Int = 0
     
-    init(title: String, imageNamed: String) {
+    init(title: String, imageNamed: String, barView: ScopeBarView!, index: Int) {
         
+        self.barView = barView
+        self.index = index
         self.title = title
         self.backgroundImage = UIImage(named: imageNamed)
         
         super.init(frame: CGRectZero)
+        
+        backgroundColor = UIColor.yellowColor()
+        
+        setTitle(title, forState: .Normal)
+        
+        addTarget(barView.scopeController, action: "centerView:", forControlEvents: .TouchUpInside)
     }
 
     required init(coder aDecoder: NSCoder) {

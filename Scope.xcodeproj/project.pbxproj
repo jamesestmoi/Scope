@@ -11,6 +11,7 @@
 		00A511241B2CA6AC00EBF9F4 /* ScopeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A511231B2CA6AC00EBF9F4 /* ScopeContainerView.swift */; };
 		00A511261B2CC3AC00EBF9F4 /* ScopeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A511251B2CC3AC00EBF9F4 /* ScopeTableViewController.swift */; };
 		00A511281B2D219500EBF9F4 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A511271B2D219500EBF9F4 /* Scope.swift */; };
+		00A5112A1B2F78E900EBF9F4 /* ScopeBarItemEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A511291B2F78E900EBF9F4 /* ScopeBarItemEmptyView.swift */; };
 		00AD89041B2C981400B3C6C3 /* ScopeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD89031B2C981400B3C6C3 /* ScopeController.swift */; };
 		00AD89061B2C983600B3C6C3 /* ScopeBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AD89051B2C983600B3C6C3 /* ScopeBarView.swift */; };
 		00C4856C1B2C8C0000EE8CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4856B1B2C8C0000EE8CED /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		00A511231B2CA6AC00EBF9F4 /* ScopeContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeContainerView.swift; sourceTree = "<group>"; };
 		00A511251B2CC3AC00EBF9F4 /* ScopeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeTableViewController.swift; sourceTree = "<group>"; };
 		00A511271B2D219500EBF9F4 /* Scope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
+		00A511291B2F78E900EBF9F4 /* ScopeBarItemEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeBarItemEmptyView.swift; sourceTree = "<group>"; };
 		00AD89031B2C981400B3C6C3 /* ScopeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeController.swift; sourceTree = "<group>"; };
 		00AD89051B2C983600B3C6C3 /* ScopeBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeBarView.swift; sourceTree = "<group>"; };
 		00C485661B2C8C0000EE8CED /* Scope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scope.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 				00AD89031B2C981400B3C6C3 /* ScopeController.swift */,
 				00AD89051B2C983600B3C6C3 /* ScopeBarView.swift */,
 				00A511211B2C9EBA00EBF9F4 /* ScopeBarItemView.swift */,
+				00A511291B2F78E900EBF9F4 /* ScopeBarItemEmptyView.swift */,
 				00A511231B2CA6AC00EBF9F4 /* ScopeContainerView.swift */,
 				00A511251B2CC3AC00EBF9F4 /* ScopeTableViewController.swift */,
 				00A511271B2D219500EBF9F4 /* Scope.swift */,
@@ -311,6 +314,7 @@
 				00A511221B2C9EBA00EBF9F4 /* ScopeBarItemView.swift in Sources */,
 				00AD89041B2C981400B3C6C3 /* ScopeController.swift in Sources */,
 				00C4856C1B2C8C0000EE8CED /* AppDelegate.swift in Sources */,
+				00A5112A1B2F78E900EBF9F4 /* ScopeBarItemEmptyView.swift in Sources */,
 				00A511261B2CC3AC00EBF9F4 /* ScopeTableViewController.swift in Sources */,
 				00AD89061B2C983600B3C6C3 /* ScopeBarView.swift in Sources */,
 			);
